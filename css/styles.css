@@ -4,6 +4,9 @@
 /* Importar aquí la font */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
@@ -18,16 +21,19 @@
     scroll-behavior: smooth;
 }
 
-/* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb;
+    font-size: 18px;
+    color: #0f0f0f;
+    /* yo:es importante poner el color o es el color por defecto? */
+    line-height: 1.2;
+    /*  yo: interlineado */
 }
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
+
+
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
@@ -54,3 +60,75 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#logo img {
+    width: 180px;
+}
+
+nav {
+    width: 100%;
+
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.seccion {
+    min-height: 100vh;
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+}
+
+#foto img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#boton {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.altura{
+    height: 90px;
+}
+
+.fondo-color-fuente{
+    background-color:#af599e;
+    color: #fbfbfb;
+   
+}
